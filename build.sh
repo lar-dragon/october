@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# CONFIG
+envsubst < template.env | sed '/^[^=]\+=$/d' > .env
+
 # INSTALL
 if [[ $APP_ENV =~ "dev" || $APP_ENV =~ "test" ]]; then
   composer install --prefer-dist --no-interaction --no-suggest
