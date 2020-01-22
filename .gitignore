@@ -22,7 +22,16 @@
 /nbproject
 /.data
 /laradock/*
+!/laradock/mysql
+/laradock/mysql/*
+!/laradock/mysql/my.cnf
+!/laradock/nginx
+/laradock/nginx/*
+!/laradock/nginx/sites
+/laradock/nginx/sites/*
 !/laradock/nginx/sites/default.conf
+!/laradock/php-fpm
+/laradock/php-fpm/*
 !/laradock/php-fpm/xdebug.ini
 !/laradock/.env
 !/laradock/build.sh
