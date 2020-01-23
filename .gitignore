@@ -38,6 +38,7 @@
 !/laradock/docker-compose.yml
 !/laradock/down.sh
 !/laradock/exec.sh
+!/laradock/hub.sh
 !/laradock/init.sh
 !/laradock/test.sh
 !/laradock/up.sh
