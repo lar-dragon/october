@@ -4,7 +4,7 @@
 envsubst < template.env | sed '/^[^=]\+=$/d' > .env
 
 # INSTALL
-if [[ $APP_ENV =~ "dev" || $APP_ENV =~ "test" ]]; then
+if [[ $APP_ENV =~ "dev" || $APP_ENV =~ "testing" ]]; then
   composer install --prefer-dist --no-interaction --no-suggest
 else
   composer install --prefer-dist --no-interaction --no-suggest --no-dev

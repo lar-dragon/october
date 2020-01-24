@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
+t=$(mktemp)
+export -p > "$t"
 . .env
+# shellcheck disable=SC1090
+. "$t"
+rm "$t"
+unset t
 git init
 git remote add origin "$LARADOCK_ORIGIN"
 git fetch origin --tags --prune
